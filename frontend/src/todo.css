@@ -151,6 +151,39 @@ button:focus-visible {
   transform: translateY(-1px);
 }
 
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--rule);
+}
+
+.filter-tabs button {
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.12s ease;
+}
+
+.filter-tabs button:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.filter-tabs button.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
 /* List */
 .todo-list {
   list-style: none;
